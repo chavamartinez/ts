@@ -1,0 +1,19 @@
+<div id="authenticated_user_ui">
+  <div class="info">
+    <div class="info_row">
+      <h3>Authenticated User UI</h3>
+      <label>Si el usuario está autenticado podemos ejecutar los métodos
+        <code>logout</code>, <code>invokePolicy</code>, <code>startAuthenticationConfiguration</code> y más.
+      </label>
+    </div>
+    <div class="info_row">
+      <button onclick="onLogout()" class="app_submit_button" style="background-color: #FF0000;">Logout</button>
+    </div>
+  </div>
+
+  <div class="ui_container">
+    <button onclick="invokeJourney();" class="app_submit_button full_width">Invoke Journey</button>
+    <button onclick="invokeAuthenticationConfiguration();" class="app_submit_button full_width">Configure Authenticators</button>
+    <button onclick="invokeDeviceManagement();" class="app_submit_button full_width">Device Management</button>
+  </div>
+</div>
